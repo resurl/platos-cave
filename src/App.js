@@ -1,48 +1,36 @@
 import './App.css';
 import React, { useState, useEffect } from "react";
 import story from "./assets/narration";
+import Screen from "./Screen";
 import Button from "./Button";
 
 function App() {
-  const [line, setCurrLine] = useState("");
-  const [scene, setScene] = useState({dialogue:["hi"], options: [{text:"no", goto: 1}]});
-  const [buttons, setButtons] = useState([]);
-  const [buttonjsx, setBJsx] = useState([]);
-  const [position, setPosition] = useState(0);
-  
-  useEffect(()=>{
-    if (scene) {
-      setCurrLine(scene.dialogue[0]);
-      setButtons(scene.options);
-      console.log(line)
-      console.log(buttons)
-    }
-  }, [scene]);
+  const [ scene, setScene ] = useState({dialogue:"Loading...", options: []});
+  const [ options, setOptions ] = useState([]);
+  const [ position, setPosition ] = useState(0);
 
-  useEffect(()=> {
-    setScene(story.scenes[position]);
+  useEffect(() => {
+    setScene(story.scenes[0]);
+    setOptions(story.scenes[0].options);
+    console.log(options)
+  }, [])
+
+  useEffect(() => {
+    if (position > 0) {
+      setScene(story.scenes[position]);
+      setOptions(story.scenes[position].options);
+    }  
   }, [position]);
 
-  useEffect(()=> {
-    console.log("buttons")
-    let jsx = [];
-    for (let i = 0; i < buttons.length; i++) {
-      let butt = <Button lambda={setPosition(buttons[i].goto)} 
-                         text={buttons[i].text}/>
-      jsx.push(butt);
-    }
-    setBJsx(jsx);
-  }, [buttons]);
+  function handleOptionSelect(num) {
+    setPosition(num);
+  }
 
   return (
     <div className="App">
-      <div className="container">
-        <div className="container__dialogue">
-          {line}
-        </div>
-        <div className="container__options">
-          {buttonjsx}
-        </div>
+      <Screen display={scene.dialogue} />
+      <div className="Options">
+        {options.map((o) => <Button text={o.text} lambda={handleOptionSelect} goto={o.goto} />)}
       </div>
     </div>
   );

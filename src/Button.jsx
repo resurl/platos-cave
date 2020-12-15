@@ -1,10 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const Button = (props) => {
-    const { text, lambda } = props;
+    const { text, goto, lambda } = props;
+
+    function handleClick() {
+        lambda(goto)
+    }
 
     return (
-        <button onClick={lambda}>
+        <button onClick={handleClick}
+                style={{
+                        backgroundColor: "white",
+                        color: "black",
+                        height: "100px",
+                        width: "100px"
+                    }}>
             {text}
         </button>
     );
