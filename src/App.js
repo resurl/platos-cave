@@ -1,13 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-import Screen from "./Screen";
+import story from "./assets/narration";
 
 function App() {
   return (
     <div className="App">
-      <Screen>
-        <Panel></Panel>
-      </Screen>
+      <div className="container">
+        <div className="container--dialogue">
+        
+        </div>
+        <div className="container--options">
+
+        </div>
+      </div>
     </div>
   );
 }
