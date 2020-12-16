@@ -17,7 +17,7 @@ const Screen = (props) => {
 
     return (
         <div className="Screen">
-            {display.join(" ")}
+            {display.join("\n")}
         </div>
     );
 }

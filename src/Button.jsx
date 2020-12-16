@@ -8,13 +8,7 @@ const Button = (props) => {
     }
 
     return (
-        <button onClick={handleClick}
-                style={{
-                        backgroundColor: "white",
-                        color: "black",
-                        height: "100px",
-                        width: "100px"
-                    }}>
+        <button onClick={handleClick}>
             {text}
         </button>
     );

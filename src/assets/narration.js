@@ -25,7 +25,7 @@ const story = {
         ],
         options: [
           {
-            text: 'Just listen',
+            text: 'Listen',
             'goto': 3
           }
         ]

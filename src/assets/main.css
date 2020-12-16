@@ -1,0 +1,14 @@
+html {
+  background-color: #181A1B;
+}
+
+.App {
+  color: white;
+}
+
+.Button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=main.css.map */
