@@ -18,7 +18,6 @@ function App() {
   useEffect(() => {
     setScene(story.scenes[position]);
     setOptions(story.scenes[position].options);
-
   }, [position]);
 
   function handleOptionSelect(num) {
