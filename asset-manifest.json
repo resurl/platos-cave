@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/resurreccionl.github.io/platos-cave/static/css/main.c5d5cb16.chunk.css",
+    "main.js": "/resurreccionl.github.io/platos-cave/static/js/main.59ff4308.chunk.js",
+    "main.js.map": "/resurreccionl.github.io/platos-cave/static/js/main.59ff4308.chunk.js.map",
+    "runtime-main.js": "/resurreccionl.github.io/platos-cave/static/js/runtime-main.03ba4048.js",
+    "runtime-main.js.map": "/resurreccionl.github.io/platos-cave/static/js/runtime-main.03ba4048.js.map",
+    "static/js/2.02ddc330.chunk.js": "/resurreccionl.github.io/platos-cave/static/js/2.02ddc330.chunk.js",
+    "static/js/2.02ddc330.chunk.js.map": "/resurreccionl.github.io/platos-cave/static/js/2.02ddc330.chunk.js.map",
+    "static/js/3.97fc4dfb.chunk.js": "/resurreccionl.github.io/platos-cave/static/js/3.97fc4dfb.chunk.js",
+    "static/js/3.97fc4dfb.chunk.js.map": "/resurreccionl.github.io/platos-cave/static/js/3.97fc4dfb.chunk.js.map",
+    "index.html": "/resurreccionl.github.io/platos-cave/index.html",
+    "static/css/main.c5d5cb16.chunk.css.map": "/resurreccionl.github.io/platos-cave/static/css/main.c5d5cb16.chunk.css.map",
+    "static/js/2.02ddc330.chunk.js.LICENSE.txt": "/resurreccionl.github.io/platos-cave/static/js/2.02ddc330.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03ba4048.js",
+    "static/js/2.02ddc330.chunk.js",
+    "static/css/main.c5d5cb16.chunk.css",
+    "static/js/main.59ff4308.chunk.js"
+  ]
+}
